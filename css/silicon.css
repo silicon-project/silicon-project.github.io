@@ -1,0 +1,44 @@
+.events {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+  justify-content: center;
+  overflow: hidden;
+}
+
+.events section {
+  border-bottom: 1px solid rgba(255 255 255 / 0.8);
+  display: grid;
+  gap: 1rem;
+  grid-template-columns: 1fr;
+  grid-template-rows: auto 4rem 1fr auto auto;
+  max-width: 534px;
+  padding-bottom: 3rem;
+}
+
+.events section h3,
+.events.events section p {
+  font-size: 2.4rem;
+  line-height: 1.2;
+  margin: 0;
+  width: 100%;
+}
+
+.events.events section p {
+  font-size: 1.6rem;
+}
+
+.events section img {
+  filter: invert() drop-shadow(0 0 0.5rem #16a085);
+  margin: 2rem 0;
+  width: 100%;
+}
+
+.events.events section p.date {
+  font-size: 2.4rem;
+}
+
+.events a {
+  font-size: 1.6rem;
+  text-transform: uppercase;
+}
